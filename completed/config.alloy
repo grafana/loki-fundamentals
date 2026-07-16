@@ -28,8 +28,10 @@ loki.write "http" {
 otelcol.receiver.kafka "default" {
   brokers          = ["kafka:9092"]
   protocol_version = "2.0.0"
-  topic           = "otlp"
-  encoding        = "otlp_proto"
+  logs {
+    topic    = "otlp"
+    encoding = "otlp_proto"
+  }
 
   output {
     logs    = [otelcol.processor.batch.default.input]
