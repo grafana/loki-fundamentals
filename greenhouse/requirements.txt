@@ -29,7 +29,7 @@ opentelemetry-semantic-conventions==0.51b0
 packaging==24.2
 protobuf==5.29.3
 psycopg2==2.9.10
-python-engineio==4.11.2
+python-engineio==4.13.2
 python-socketio==5.12.1
 requests==2.32.3
 simple-websocket==1.1.0
