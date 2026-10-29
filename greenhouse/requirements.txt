@@ -16,7 +16,7 @@ importlib_metadata==8.5.0
 itsdangerous==2.2.0
 Jinja2==3.1.5
 MarkupSafe==3.0.2
-opentelemetry-api==1.30.0
+opentelemetry-api==1.45.1
 opentelemetry-distro==0.51b0
 opentelemetry-exporter-otlp==1.30.0
 opentelemetry-exporter-otlp-proto-common==1.30.0
