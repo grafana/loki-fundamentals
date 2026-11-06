@@ -1,4 +1,4 @@
-// This component is responsible for disovering new containers within the docker environment
+// This component is responsible for discovering new containers within the docker environment
 discovery.docker "getting_started" {
 	host = "unix:///var/run/docker.sock"
 	refresh_interval = "5s"
@@ -21,7 +21,7 @@ loki.source.docker "getting_started" {
 	targets          = discovery.docker.getting_started.targets
 	forward_to       = [loki.process.getting_started.receiver]
 	relabel_rules    = discovery.relabel.getting_started.rules
-	refresh_interval = "5s"
+	labels           = {"app" = "loki-fundamentals"}
 }
 
 // This component is responsible for processing the logs (In this case adding static labels)
